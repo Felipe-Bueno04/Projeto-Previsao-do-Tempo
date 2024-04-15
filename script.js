@@ -27,7 +27,7 @@ async function buscarCidade(cidade) {
   let dados = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       cidade +
-      "&appid=406d9e496ad69f05330bd982d578b48e&units=metric"
+      "&appid=406d9e496ad69f05330bd982d578b48e&units=metric" /* Essa parte do &units=metric que vai depois da chave, isso serve para trazer a temperatura em graus Celsius. */
   ).then((resposta) => resposta.json());
 
   // await = ESPERE
